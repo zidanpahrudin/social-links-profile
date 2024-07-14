@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    :root {
+      --clr__white: hsl(0, 0%, 100%);
+      --clr__grey: hsl(0, 0%, 20%);
+      --clr__darkGrey: hsl(0, 0%, 12%);
+      --clr__offBlack: hsl(0, 0%, 8%);
+      --clr__green: hsl(75, 94%, 57%);
+    }
+    @font-face {
+      font-family: 'inter';
+      src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    }
+
+    /* reset */
+    *, *::before, *::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .body {
+      font-family: 'inter';
+      display: grid;
+      place-content: center;
+      height: 100vh;
+      background-color: var(--clr__offBlack);
+    }
+
+    .social-links-card {
+      text-align: center;
+      color: var(--clr__white);
+    }
+    .social-links-card__item {
+      list-style: none;
+    }
+    .social-links-card__item > a {
+      color: var(--clr__white);
+      text-decoration: none;
+    }
+    
+    
+    /* style card */
+    .social-links-card {
+      background-color: var(--clr__darkGrey);
+      padding: 1rem;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      border-radius: .7rem;
+    }
+    
+    .social-links-card__avatar {
+      line-height: 1.8rem;
+    }
+    
+    .social-links-card__avatar > img {
+      width: 85px;
+      border-radius: 100%;
+      margin-top: .5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .social-links-card__name{
+      font-weight: 500;
+    }
+
+    .social-links-card__location {
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--clr__green);
+    }
+
+    .social-links-card__bio {
+      font-size: .9rem;
+      font-weight: 300;
+      margin: 1.5rem;
+    }
+
+    .social-links-card__item{
+      font-weight: 600;
+      background-color: var(--clr__grey);
+      padding-top: .9rem;
+      padding-bottom: .9rem;
+      margin-bottom: 1.1rem;
+      border-radius: .7rem;
+    }
+
+    .social-links-card__link {
+      font-size: .9rem;
+    }
+
+    .social-links-card__item:hover {
+      background-color: var(--clr__green);
+      cursor: pointer;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+      
+    }
+    
+    .social-links-card__item:hover .social-links-card__link {
+      color: var(--clr__darkGrey);
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+
+    }
+
+  </style>
+</head>
+
+<body class="body">
+  <section class="social-links-card">
+    <div class="social-links-card__header">
+      <div class="social-links-card__avatar">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall's avatar">
+        <h1 class="social-links-card__name">Jessica Randall</h1>
+        <p class="social-links-card__location">London, United Kingdom</p>
+      </div>
+      <p class="social-links-card__bio">"Front-end developer and avid reader."</p>
+    </div>
+    <ul class="social-links-card__list">
+      <li class="social-links-card__item">
+        <a href="#" class="social-links-card__link">GitHub</a>
+      </li>
+      <li class="social-links-card__item">
+        <a href="#" class="social-links-card__link">Frontend Mentor</a>
+      </li>
+      <li class="social-links-card__item">
+        <a href="#" class="social-links-card__link">LinkedIn</a>
+      </li>
+      <li class="social-links-card__item">
+        <a href="#" class="social-links-card__link">Twitter</a>
+      </li>
+      <li class="social-links-card__item">
+        <a href="#" class="social-links-card__link">Instagram</a>
+      </li>
+    </ul>
+  </section>
+</body>
+
+</html>
